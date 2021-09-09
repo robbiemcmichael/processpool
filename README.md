@@ -8,6 +8,14 @@ be ready before serving it to clients via HTTP. The client is responsible for
 shutting down the process (e.g. by killing the PID) after which `processpool`
 will start a new process to reuse that port.
 
+## Releases
+
+- Statically linked executables are available from the [releases][releases]
+  page
+
+- Docker images are published to [`robbiemcmichael/processpool`][docker-hub] on
+  Docker Hub
+
 ## Usage
 
 ```
@@ -35,3 +43,6 @@ Use `curl` to fetch a PID and port for the Python process:
 $ curl http://127.0.0.1:8080
 {"pid":14159,"port":33000}
 ```
+
+[releases]: https://github.com/robbiemcmichael/processpool/releases
+[docker-hub]: https://hub.docker.com/r/robbiemcmichael/processpool
